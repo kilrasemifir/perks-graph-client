@@ -15,3 +15,14 @@ npm i
 ```npm
 npm run start
 ```
+
+## Instruction pour le developpement:
+* Utilisation de Standart-version:
+    * Nous utilisons sur ce projet les conventions:
+        * conventionnal commit : [lien vers la doc](https://www.conventionalcommits.org/en/v1.0.0/)
+        * standart version: [lien vers la doc](https://github.com/conventional-changelog/standard-version)
+    * Lors de la création d'une nouvelle release:
+    ```npm
+    npm run release
+    ```
+    
