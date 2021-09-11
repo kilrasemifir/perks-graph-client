@@ -5,31 +5,22 @@ import { graphConfig } from '../../configs/GraphConfg';
 import { BasicGraphData, emptyGraphData } from '../../types/graph';
 
 interface Props {
-    width?: number,
-    height?: number
+    width?: string,
+    height?: string
 }
 export const PerkGraph = (props:Props) => {
 
     const graphRef:any = React.useRef<HTMLHeadingElement>();
     let data:BasicGraphData = emptyGraphData()
-    const [dimensions, setDimensions] = React.useState({ width:0, height: 0 });
+
     data.nodes.push({id:"toto"})
-    React.useLayoutEffect(() => {
-        if (graphRef.current) {
-          setDimensions({
-            width: graphRef.current.offsetWidth - 4,
-            height: graphRef.current.offsetHeight -4
-          });
-        }
-      }, []);
-    const config = {
+    const config:any = {
         ...graphConfig,
-        width: dimensions.width,
-        height: dimensions.height,
+        width: props.width || '90vw',
+        height: props.height || '90vh',
         color: "green"
     }
     console.log("config:",config)
-    console.log("dim", dimensions)
     
     return (
         <div style={{ width:"99%", height:"99%", padding:"2px"}} 

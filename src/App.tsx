@@ -1,20 +1,25 @@
 import React from 'react';
 import './App.css';
-import { DashboardLayout, PanelLayout } from './features/dashboard';
 import { PerkGraph } from './features/graph/PerkGraph';
+import { WindowBar } from './features/window-panel/WindowBar';
+import { WindowBarItem } from './features/window-panel/WindowBarItem';
 
 
 function App() {
   return (
     <div className="App">
-      <DashboardLayout width={60} height={60}>
-        <PanelLayout x={1} y={1} w={8} h={0}>
-          <PerkGraph/>
-        </PanelLayout>
-        <PanelLayout x={9} y={1} w={2} h={0}>
-          <p>Goodbye</p>
-        </PanelLayout>
-      </DashboardLayout>
+      <PerkGraph/>
+      <WindowBar buttonWidth='200px'>
+        <WindowBarItem label="Edition du graph">
+          <div>
+            <h2>Panel d'edition du Graph</h2>
+            <p>Test d'un panel</p>
+          </div>
+        </WindowBarItem>
+        <WindowBarItem label="Informations">
+          Hello B
+        </WindowBarItem>
+      </WindowBar>
     </div>
   );
 }

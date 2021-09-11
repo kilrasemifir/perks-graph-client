@@ -23,15 +23,15 @@ const defaultProps:Partial<InnerProps> = {
 
 export const _DashboardLayout = (_props:Props) => {
     const props: Props = {...defaultProps, ..._props};
+    const dashboardWidth = window.innerWidth*(props.width||100)/100;
+    const dashboardHeight = window.innerHeight*(props.height||100)/100;
     const styleDashboard: CSSProperties = {
         backgroundColor: "red",
         display: "grid",
         padding: `${props.padding}px`,
-        height: `${props.height}vh`,
-        width: `${props.width}vh`,
+        height: `${dashboardHeight}px`,
+        width: `${dashboardWidth}px`,
     }
-    const windowWidth = window.innerWidth*(props.width||100)/100;
-    const windowHeight = window.innerHeight*(props.height||100)/100;
     let colCount = 0;
     let rowCount = 0;
     props.children.forEach(child=>{
@@ -39,10 +39,10 @@ export const _DashboardLayout = (_props:Props) => {
         rowCount += child.props.h;
     })
     const childrenWithSize = Children.map(props.children, child=>{
-        const wCol = child.props.w;
+        const panelColumn = child.props.w;
         const panelRows = child.props.h;
-        const width = (windowWidth*wCol/colCount)-2*(props.padding||0);
-        const height = (windowHeight*panelRows/rowCount)-2*(props.padding||0);
+        const width = (dashboardWidth*panelColumn/colCount)-4*(props.padding||0);
+        const height = (dashboardHeight*panelRows/rowCount)-4*(props.padding||0);
         const newProps = {...child.props, width, height};
         return cloneElement(child, newProps);
     })
