@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import { PerkGraph } from './features/graph/PerkGraph';
-import { WindowBar } from './features/window-panel/WindowBar';
-import { WindowBarItem } from './features/window-panel/WindowBarItem';
+import { WindowBar } from './ui/window/WindowBar';
+import { WindowBarItem } from './ui/window/WindowBarItem';
 
 
 function App() {

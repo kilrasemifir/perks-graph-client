@@ -1,11 +1,18 @@
 import { GraphConfiguration } from "react-d3-graph";
 
 export const graphConfig: Partial<GraphConfiguration<any, any>> = {
-    node:{},
-    link:{},
-    height: 0.95*window.innerHeight,
-    width: 0.95*window.innerWidth,
-    automaticRearrangeAfterDropNode: false,
+    node: {
+        size: 800,
+        
+    },
+    link: {},
+    d3:{
+        gravity: -1000
+    },
+    automaticRearrangeAfterDropNode: true,
     collapsible: false,
-    directed: false
+    nodeHighlightBehavior: true,
+    directed: false,
+    staticGraph: false,
+    
 }

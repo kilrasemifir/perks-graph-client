@@ -1,5 +1,4 @@
-import React, { Children, createContext, useEffect, useState } from 'react';
-import { WindowBarItem } from './WindowBarItem';
+import React, { Children, createContext, useState } from 'react';
 import { WindowLayout } from './panel/WindowLayout';
 
 interface Props {
