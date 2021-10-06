@@ -19,10 +19,12 @@ const userPerks = [
  */
 function App() {
   const [graphData, setGraphData] = useState(languageGraph)
+
   const [userPerks, setuserPerks] = useState([
     {id:'java', niveau:1},
     {id:'C#', niveau:2},
-  ])
+  ]);
+  
   const [nodeSelectioner, setNodeSelectioner] = useState(languageGraph.focusedNodeId)
 
   const incrementUserPerk = (nodeId:string) => {
