@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/kilrasemifir/perks-graph-client/compare/v0.0.7...v0.1.0) (2021-10-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* Nouvelle feature en ajutant un ;
+
+### Features
+
+* Nouvelle feature en ajutant un ; ([04137a1](https://github.com/kilrasemifir/perks-graph-client/commit/04137a16cbcdaea3745d5e3520c73eb7d7e3b62c))
+
 ### [0.0.7](https://github.com/kilrasemifir/perks-graph-client/compare/v0.0.6...v0.0.7) (2021-10-06)
 
 ### [0.0.6](https://github.com/kilrasemifir/perks-graph-client/compare/v0.0.5...v0.0.6) (2021-10-06)
