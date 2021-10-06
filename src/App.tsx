@@ -13,7 +13,10 @@ const userPerks = [
   {id:'C#', niveau:2},
 ]
 
-
+/**
+ * Une documentation incroyable pour le composant racine de l'application
+ * @returns 
+ */
 function App() {
   const [graphData, setGraphData] = useState(languageGraph)
   const [userPerks, setuserPerks] = useState([
