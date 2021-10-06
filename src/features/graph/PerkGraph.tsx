@@ -11,6 +11,11 @@ interface Props {
     data: BasicGraphData,
     onClickNode?: (nodeId:string)=>void
 }
+/**
+ * Composant permettant de d'afficher un graph avec les competences des utilisateurs.
+ * @param props 
+ * @returns 
+ */
 export const PerkGraph = (props:Props) => {
 
     const graphRef:any = React.useRef<HTMLHeadingElement>();
