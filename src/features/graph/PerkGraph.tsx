@@ -31,6 +31,7 @@ export const PerkGraph = (props:Props) => {
         buildGraph()
     }, [props.data, props.userPerks])
     buildGraph();
+    
     const config:any = {
         ...graphConfig,
         width: window.innerWidth,
