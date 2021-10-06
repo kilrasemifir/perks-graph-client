@@ -15,9 +15,9 @@ export const PerkGraph = (props:Props) => {
 
     const graphRef:any = React.useRef<HTMLHeadingElement>();
 
-    const data = props.data;
+    const dataGraph = props.data;
     const buildGraph = () => {
-        data.nodes = data.nodes.map(node=>{
+        dataGraph.nodes = dataGraph.nodes.map(node=>{
             let tperk = props.userPerks.filter(p=>p.id===node.id);
             const perk = tperk.length? tperk[0]:undefined
             return {
@@ -31,7 +31,7 @@ export const PerkGraph = (props:Props) => {
         buildGraph()
     }, [props.data, props.userPerks])
     buildGraph();
-    
+
     const config:any = {
         ...graphConfig,
         width: window.innerWidth,
@@ -43,7 +43,7 @@ export const PerkGraph = (props:Props) => {
         ref={graphRef}>
             <Graph
                 id="mygraph"
-                data={data}
+                data={dataGraph}
                 config={config}
                 onClickNode={props.onClickNode}
             />
