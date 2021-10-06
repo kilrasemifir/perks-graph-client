@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/kilrasemifir/perks-graph-client/compare/v0.0.4...v0.0.5) (2021-10-06)
+
+
+### Features
+
+* Ajour d'une description pour le langage PHP ([ba81914](https://github.com/kilrasemifir/perks-graph-client/commit/ba81914f29fcd74956cf530a40583eed65208da0))
+* **dashboard:** Mise en place d'un systeme de dashboard pour le placement des elements sur l'application ([543993d](https://github.com/kilrasemifir/perks-graph-client/commit/543993d610b93b55a890cd2a2f04d8d1325e5f8c))
+* **technique:** Ajout de react router dom ([817d265](https://github.com/kilrasemifir/perks-graph-client/commit/817d26516e382365a2b73d384d2234c438367514))
+* **window-panel:** Ajout d'un systeme d'onglet et de fenetre pour l'ui. Plus pratique que les dashboards et plus simple a metre en place. ([cdbcd65](https://github.com/kilrasemifir/perks-graph-client/commit/cdbcd654e3463b6caefac73c525958966e2e0b77))
+
 ### [0.0.4](https://github.com/kilrasemifir/perks-graph-client/compare/v0.0.3...v0.0.4) (2021-09-04)
 
 ### [0.0.3](///compare/v0.0.2...v0.0.3) (2021-09-04)
