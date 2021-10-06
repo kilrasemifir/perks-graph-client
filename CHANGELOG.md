@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/kilrasemifir/perks-graph-client/compare/v0.1.0...v0.2.0) (2021-10-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* Cadre de fenetre
+
+* Cadre de fenetre ([14add6d](https://github.com/kilrasemifir/perks-graph-client/commit/14add6d1fdc8841fa2a9326b5fe556aa3d9321c5))
+
 ## [0.1.0](https://github.com/kilrasemifir/perks-graph-client/compare/v0.0.7...v0.1.0) (2021-10-06)
 
 
