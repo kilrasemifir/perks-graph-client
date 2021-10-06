@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/kilrasemifir/perks-graph-client/compare/v0.0.5...v0.0.6) (2021-10-06)
+
+
+### Bug Fixes
+
+* ajout d'une ligne ([db723f7](https://github.com/kilrasemifir/perks-graph-client/commit/db723f7938bdf588724fb51ec8bcd841b7786a6d))
+
 ### [0.0.5](https://github.com/kilrasemifir/perks-graph-client/compare/v0.0.4...v0.0.5) (2021-10-06)
 
 
