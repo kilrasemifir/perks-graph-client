@@ -11,7 +11,9 @@ const baseStyle: CSSProperties = {
     margin: '10px 3px',
     padding: '5px',
     borderRadius:'5px',
-    boxShadow: '2px 4px lightgrey',
+    boxShadow: '0px 0px 10px lightgrey',
+    border: '1px',
+    borderBlock: '10px',
     maxHeight: '500px',
     minHeight: '100px'
 }

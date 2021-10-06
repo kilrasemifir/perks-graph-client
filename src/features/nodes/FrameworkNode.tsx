@@ -7,15 +7,14 @@ interface Props {
 
 const colors = ['red', 'orange', 'yellow', 'green']
 
-export const LanguageNode = (props:Props) => {
+export const FrameworkNode = (props:Props) => {
     const style: CSSProperties = {
         backgroundColor: colors[props.perks?.niveau||0],
         width: '80px',
         height: '80px',
-        borderRadius: '50px',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     }
     return <div style={style}>
         <div>

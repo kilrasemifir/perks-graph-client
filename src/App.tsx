@@ -1,25 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { PerkGraph } from './features/graph/PerkGraph';
+import { RightBarLayout } from './layouts/right-bar.layout';
+import { environmentGraph } from './samples/graph/environment';
+import { languageGraph } from './samples/graph/language';
+import { information } from './samples/informations';
 import { WindowBar } from './ui/window/WindowBar';
 import { WindowBarItem } from './ui/window/WindowBarItem';
 
+const userPerks = [
+  {id:'java', niveau:1},
+  {id:'C#', niveau:2},
+]
+
 
 function App() {
+  const [graphData, setGraphData] = useState(languageGraph)
+  const [userPerks, setuserPerks] = useState([
+    {id:'java', niveau:1},
+    {id:'C#', niveau:2},
+  ])
+  const [nodeSelectioner, setNodeSelectioner] = useState(languageGraph.focusedNodeId)
+
+  const incrementUserPerk = (nodeId:string) => {
+    graphData.focusedNodeId = nodeId;
+    setNodeSelectioner(nodeId);
+    setGraphData(graphData);
+  }
   return (
     <div className="App">
-      <PerkGraph/>
-      <WindowBar buttonWidth='200px'>
-        <WindowBarItem label="Edition du graph">
-          <div>
-            <h2>Panel d'edition du Graph</h2>
-            <p>Test d'un panel</p>
-          </div>
-        </WindowBarItem>
-        <WindowBarItem label="Informations">
-          Hello B
-        </WindowBarItem>
-      </WindowBar>
+      <PerkGraph 
+        userPerks={userPerks} 
+        data={graphData} 
+        onClickNode={incrementUserPerk}/>
+      <RightBarLayout 
+        setGraphData={(graphData:any)=>setGraphData(graphData)} 
+        nodeSelectioner={nodeSelectioner}/>
     </div>
   );
 }

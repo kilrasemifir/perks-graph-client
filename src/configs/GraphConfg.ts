@@ -7,12 +7,15 @@ export const graphConfig: Partial<GraphConfiguration<any, any>> = {
     },
     link: {},
     d3:{
-        gravity: -1000
+        gravity: -2000,
+        // linkLength: 400
     },
     automaticRearrangeAfterDropNode: true,
     collapsible: false,
+    
     nodeHighlightBehavior: true,
     directed: false,
     staticGraph: false,
+    initialZoom:0.5
     
 }
