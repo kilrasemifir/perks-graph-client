@@ -22,6 +22,11 @@ interface Props {
     rightOffest?: string
 }
 
+/**
+ * Cadre de fenetre
+ * @param props 
+ * @returns 
+ */
 export const WindowPanel = (props:Props) => {
     const style: CSSProperties = {
         ...baseStyle,
